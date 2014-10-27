@@ -20,14 +20,15 @@ ActiveRecord::Schema.define(version: 20141027073937) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "listings", ["user_id", "created_at"], name: "index_listings_on_user_id_and_created_at"
   add_index "listings", ["user_id"], name: "index_listings_on_user_id"
 
   create_table "users", force: true do |t|
-    t.string   "name",            limit: 255
-    t.string   "email",           limit: 255
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password_digest", limit: 255
+    t.string   "password_digest"
     t.string   "remember_digest"
   end
 
