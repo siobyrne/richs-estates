@@ -1,9 +1,14 @@
 
-	<hr>
-	<div class="container"
-		<footer>
-			<p>&copy; Rich's Estates 2014</p>
+		<footer class="footer">
+			<small><p>&copy; Rich's Estates 2014</p></small>
+			<nav>
+			    <ul>
+					  <li><%= link_to "Home", root_path %></li>
+			      <li><%= link_to "About Jordan",  about_path %></li>
+			      <li><%= link_to "Sellers", sellers_path %></li>
+						<li><%= link_to "Listings", listings_path %></li>
+						<li><%= link_to "Contact", contact_path %></li></ul>
+			  </nav>
 		</footer>
-		</div>
 	</body>
 </html>

@@ -18,6 +18,16 @@ body{
 	background-color: $pale-grey;
 }
 
+/*h1{
+	font-family: 'Alex Brush', cursive;
+	font-size: 55px;
+}*/
+h2{
+	font-family: 'Alex Brush', cursive;
+	font-size: 35px;
+	color: #777777;
+}
+
 /* navigation and header */
 
 .navbar-inverse{
@@ -25,10 +35,23 @@ body{
 	border: none;
 }
 
+.navbar-collapse li a{
+	text-align: center;
+}
+
 .navbar-brand{
 	font-family: 'Alex Brush', cursive;
-	font-size: 50px;
+	font-size: 70px;
 	margin-top: 10px;
+}
+
+/* jumbotron */
+
+.jumbotron{
+	background-image: url(image_path('cambria.jpg'));
+	background-size: cover;
+	height: 300px;
+	color: #fff;
 }
 
 /* forms */
@@ -71,6 +94,48 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* footer */
+
+footer {
+  margin: 45px 10px 0 10px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+  font-size: .9em;
+}
+
+/* images */
+
+.float-left{
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	float: left;
+	margin-right: 1em;
 }
 
 /* miscellaneous */

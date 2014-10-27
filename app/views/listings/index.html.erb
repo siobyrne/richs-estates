@@ -1,0 +1,31 @@
+<% provide(:title, "Listings") %>
+<div class="container">
+<% @listings.each do |listing| %>
+	    <p><%= listing.content %></p>
+			<% end %>
+			<div class="row">
+			<div class="col-md-8"><h2>PeeWee's Playhouse</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor dolor at leo finibus lacinia. Integer venenatis 
+			pellentesque porta. Donec vulputate eget quam quis pulvinar. In eget neque a augue vulputate tempus at nec augue. Praesent 
+			tincidunt id ante non auctor. Nunc pulvinar sit amet libero eu tristique. Pellentesque pretium nisl nunc, quis volutpat elit 
+			fermentum sit amet. Nunc aliquet dignissim tellus nec elementum. Sed nunc diam, consequat vel nisi in, iaculis auctor libero. 
+			Nulla dignissim ligula nec aliquam pharetra. Mauris lobortis porta ipsum, at accumsan orci ultrices in. Donec sit amet mauris
+			quis risus vestibulum tincidunt. Donec sodales convallis venenatis.</p>
+
+      <p>Quisque vitae orci sit amet quam consequat tempus eu sed felis. Donec malesuada ipsum vitae risus iaculis molestie. Fusce 
+			volutpat porttitor pharetra. Curabitur quis sagittis nibh, a finibus ex. Curabitur lobortis, turpis quis egestas pretium, odio 
+			tellus accumsan elit, tincidunt fringilla erat tellus non enim. In at consectetur lectus, id commodo neque. Integer sed vehicula 
+			massa. Nam mi ipsum, dignissim in risus sed, dictum malesuada diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+			Proin interdum dictum arcu, vitae posuere ante ornare vitae. Praesent placerat sollicitudin nisi et euismod. Quisque commodo mattis 
+			tellus placerat hendrerit.<p>
+
+      <p>Nullam eget volutpat magna. Nunc in sem nec velit lobortis varius ut tempus erat. Praesent a elementum massa, vitae fermentum 
+			tellus. Mauris rhoncus, augue a accumsan ultrices, risus lacus rutrum turpis, sed sodales neque tortor at nisi. Morbi imperdiet 
+			lacus augue, at dictum neque tincidunt eu. In ut lorem leo. Quisque aliquet odio eu arcu ultricies, vitae vulputate orci faucibus. 
+			Sed non urna vel sapien elementum mollis. Aenean neque dui, condimentum quis finibus a, porta finibus libero. Sed quis interdum elit. 
+			Quisque facilisis lobortis gravida. Aliquam dapibus elementum fermentum. Cras nisl risus, eleifend non gravida non, consequat in justo. 
+			Duis pellentesque ut lorem ac iaculis. Vivamus lorem purus, sodales nec consectetur a, posuere non velit.</p>
+			</div>
+			<div class="col-md-4"><%= image_tag("playhouse.jpg", alt: "PeeWee's Playhouse'", height: "300", width: "400", class: "img-responsive float-left") %></div>
+			</div>
+</div>
