@@ -1,7 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* mixins and variables */
+
+$pale-grey: #f6f6f6;
+
 body{
 	padding-top: 80px;
 	padding-bottom: 20px;
+	background-color: $pale-grey;
+}
+
+/* navigation and header */
+
+.navbar-inverse{
+	background-color: $pale-grey;
+	border: none;
 }
