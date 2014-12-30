@@ -5,6 +5,8 @@ RichsEstates::Application.routes.draw do
   get  'about'	=>	'static_pages#about'
 	get  'sellers' => 'static_pages#sellers'
 	get	 'contact' => 'static_pages#contact'
+	get 'testimonials' => 'static_pages#testimonials'
+	get 'vendors' => 'static_pages#vendors'
 	get  'listings' => 'listings#index'
 	get  'listing' => 'listings#new'
 	get  'signup' =>	'users#new'
