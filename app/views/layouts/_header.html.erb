@@ -23,7 +23,15 @@
 					<ul class="dropdown-menu">
 					<li><%= link_to "Buyers", '#' %></li>
 					<li><%= link_to "Sellers",   sellers_path %></li></ul></li>
-					<li><%= link_to "Listings",   '#' %></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Listings<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					<li><a href="http://www.idxhome.com/homesearch/77456">Property Search</a></li>
+					<li><a href="http://www.idxhome.com/featured/77456">Featured Listings</a></li>
+					<li><a href="http://www.idxhome.com/mapsearch/77456">Map Search</a></li>
+					<li><a href="http://www.idxhome.com/openhomes/77456">Open Homes</a></li>
+					<li><a href="http://www.idxhome.com/site/listing/search/advanced/77456">Advanced Search</a></li>
+					</ul></li>
 					<li><%= link_to "Testimonials", testimonials_path %></li>
 					<li><%= link_to "Contact", contact_path %></li>
 					</ul>
