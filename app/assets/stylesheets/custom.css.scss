@@ -5,6 +5,8 @@
 
 $pale-grey: #f6f6f6;
 $white: #fff;
+$blue: #004add;
+$red: #CC0000;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -16,6 +18,10 @@ body{
 	padding-top: 100px;
 	padding-bottom: 20px;
 	background-color: $white;
+}
+
+.container{
+	max-width: 1170px;
 }
 
 /*h1{
@@ -36,8 +42,16 @@ blockquote{
 /* navigation and header */
 
 .navbar-inverse{
-	background-color: $white;
+	background-color: $blue /*$white*/;
 	border: none;
+}
+
+.navbar-inverse .navbar-nav li a{
+	color: $white;
+}
+
+.navbar-fixed-top{
+	height: 105px;
 }
 
 .navbar-collapse li a{
@@ -47,7 +61,7 @@ blockquote{
 .navbar-brand{
 	font-family: 'Alex Brush', cursive;
 	font-size: 70px;
-	margin-top: 10px;
+	margin-top: -10px;
 }
 
 .navbar-inverse.navbar-nav li a:hover{
@@ -193,6 +207,11 @@ footer ul li {
 	border: 1px solid #ccc;
 	float: left;
 	margin-right: 1em;
+}
+
+.footer-img{
+	border: none;
+	clear: both;
 }
 
 /* miscellaneous */
