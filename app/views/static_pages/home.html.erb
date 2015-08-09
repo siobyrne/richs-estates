@@ -6,8 +6,17 @@ $('.carousel').carousel({
 
 			<!--begin bg-carousel-->
 			<div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			
+			<!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			  </ol>
+				
 			<!-- Wrapper for slides -->
-			    <div class="carousel-inner">
+			    <div class="carousel-inner" role="listbox">
 			        <div class="item active">
 			            <div class="slide1"></div>
 			        </div>
@@ -23,9 +32,12 @@ $('.carousel').carousel({
 			    </div><!-- .carousel-inner --> 
 			</div><!-- .carousel --> 
 			
-		<div class="container">
+	
 		      <!-- Example row of columns -->
-		      <div class="row">
+		      <div class="row homepage-boxes">
+						<div class="col-md-4">
+		          <%= image_tag("headshot-landing.jpg", alt:"Jordan Rich", height: "250", width: "376", class: "img-responsive") %>
+		        </div>
 		        <div class="col-md-4">
 		          <h2>The Rich Difference</h2>
 		          <p>Jordan Rich is a sixth generation Washingtonian with DC in his blood. The Rich family passion for DC began when the family started Rich's Shoes over one hundred years ago. The store was a DC landmark from 1894 until finally closing in 1987. Like his family before him, Jordan has dedicated himself to DC and, although not selling shoes, he gives the same Rich-level of service to all of his clients as they embark on the home buying and selling process.</p>
@@ -37,11 +49,5 @@ $('.carousel').carousel({
 							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.</p>
 		          <p><a class="btn btn-default" href="#" role="button">Learn more &raquo;</a></p>
 		       </div>
-		        <div class="col-md-4">
-		          <h2>Preferred Vendors</h2>
-		          <p>Jordan maintains a list of preferred vendors, ready to help with every aspect of the home buying or selling process.
-							Whether you're in need of a mortgage lender, home inspector, or just need help cleaning, consult Jordan's list of trusted
-							professionals.</p>
-		          <p><a class="btn btn-default" href="<%= vendors_path %>" role="button">Learn more &raquo;</a></p>
-		        </div>
+		        <%= image_tag("realtor-equal-housing.png", alt: "Realtor Association and Equal Housing Logo", height: "58", width: "81", class: "img-responsive float-left footer-img") %>
 		      </div>
